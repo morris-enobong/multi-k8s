@@ -1,0 +1,12 @@
+piVersion: v1
+kind: Pod 
+metadata:
+  name: worker-app-pod
+  labels: 
+    name: worker-app-pod
+
+spec:
+  containers:
+      - name: worker-app
+        image: docker pull dockersamples/examplevotingapp_worker
+        
